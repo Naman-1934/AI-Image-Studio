@@ -21,6 +21,15 @@ It was developed as part of the **ML Internship Task Assessment** for Talrn.
 - Images saved with:
   - Watermark `"AI Generated"`
   - Per-run `metadata.json` (prompt, timestamp, parameters, file paths)
+ 
+## Model Configuration
+
+All model-related parameters — such as inference settings, safety rules, and hardware logic —
+are documented inside:
+
+📄 'config/model_config.yaml'
+
+This ensures transparency and reproducibility when reviewing or extending the project.
 
 ---
 
