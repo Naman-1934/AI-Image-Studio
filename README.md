@@ -2,8 +2,6 @@
 
 This project implements a **text-to-image generation system** using a **pre-trained Stable Diffusion v1.5 model** (`runwayml/stable-diffusion-v1-5`) via Hugging Face Diffusers.
 
-It was developed as part of the **ML Internship Task Assessment** for Talrn.
-
 ---
 
 ## Features
