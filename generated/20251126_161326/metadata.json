@@ -1,0 +1,32 @@
+{
+  "model_id": "runwayml/stable-diffusion-v1-5",
+  "device": "cpu",
+  "created_at": "2025-11-26T16:18:20.779647",
+  "prompt": "a futuristic city at sunset, flying cars, neon lights ",
+  "style": "Photorealistic",
+  "num_images": 1,
+  "guidance_scale": 7.5,
+  "num_inference_steps": 30,
+  "width": 512,
+  "height": 512,
+  "seed_base": null,
+  "images": [
+    {
+      "index": 1,
+      "prompt": "a futuristic city at sunset, flying cars, neon lights ",
+      "full_prompt": "a futuristic city at sunset, flying cars, neon lights , ultra realistic, 4k, high resolution, professional photography, highly detailed, sharp focus",
+      "negative_prompt": "low quality, blurry, pixelated, deformed, disfigured, duplicate, watermark, text, logo, nsfw",
+      "style": "Photorealistic",
+      "guidance_scale": 7.5,
+      "num_inference_steps": 30,
+      "width": 512,
+      "height": 512,
+      "seed": null,
+      "png_path": "generated\\20251126_161326\\talrn_image_1.png",
+      "jpg_path": "generated\\20251126_161326\\talrn_image_1.jpg",
+      "generation_time_sec": 293.29628014564514,
+      "timestamp": "2025-11-26T16:18:20.778713"
+    }
+  ],
+  "run_dir": "generated\\20251126_161326"
+}

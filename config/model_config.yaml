@@ -1,0 +1,77 @@
+# Model Configuration for AI Image Studio
+# This file documents model & inference configuration for transparency and reproducibility.
+
+model:
+  name: "Stable Diffusion v1.5"
+  huggingface_repo: "runwayml/stable-diffusion-v1-5"
+  license: 'CreativeML Open RAIL-M'
+  version: "v1.5"
+  architecture: "Latent Diffusion Model (LDM)"
+  pipeline: "StableDiffusionPipeline (Hugging Face Diffusers)"
+  model_type: "Text-to-Image"
+  tokenizer: "CLIP tokenizer"
+  text_encoder: "OpenCLIP / CLIP-L"
+
+inference_settings:
+  default_image_resolution:
+    width: 512
+    height: 512
+  num_inference_steps_default: 30
+  num_inference_steps_max: 60
+  guidance_scale_default: 7.5
+  precision:
+    cuda: "float16"
+    mps: "float16"
+    cpu: "float32"
+  max_batch_size: 6
+  safety_checker_disabled: true
+
+hardware_detection:
+  priority_order:
+    - cuda  # NVIDIA GPU
+    - mps   # Apple Silicon GPU
+    - cpu   # Fallback
+  recommended_gpu_memory: "6GB+ VRAM recommended"
+  cpu_expected_time_per_image: "30–90 seconds"
+  gpu_expected_time_per_image: "4–8 seconds"
+
+prompt_engineering:
+  styles_supported:
+    - Photorealistic
+    - Artistic
+    - Cartoon
+    - Custom
+  negative_prompt_enabled: true
+  automatic_quality_descriptors:
+    - "highly detailed"
+    - "4k"
+    - "sharp focus"
+    - "professional photography"
+    - "cinematic lighting"
+  default_negative_terms:
+    - "blurry"
+    - "low quality"
+    - "deformed"
+    - "disfigured"
+    - "watermark"
+    - "text"
+    - "logo"
+
+data_storage:
+  save_formats:
+    - "PNG"
+    - "JPEG"
+  metadata_logging: true
+  metadata_file: "metadata.json"
+  storage_folder: "generated"
+
+safety:
+  nsfw_filtering: "Keyword-based blocking"
+  watermark_enabled: true
+  watermark_text: "AI Generated"
+  allowed_content_note: "No sexual, violent, hateful, or extremist content allowed"
+
+maintainer:
+  author: "Naman"
+  project: "AI Image Studio"
+  email: "naman532002@gmail.com"

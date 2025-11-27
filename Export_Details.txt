@@ -1,0 +1,13 @@
+Prompt: a futuristic city at sunset, neon lights 
+
+TimeStamp: November26, Wednesday, 4:21:14 PM
+    elif style == "Photorealistic":
+    
+Parametrs:  Style guidance-photorealistic, artistic , cartoon, custom
+            Number of image per prompt-1
+            Guidance scale (CFG): 1-15,
+            Number of inference steps: 10-60
+            Dimensions-512 X 512
+            Random seed (0 for random)
+            Base filename (optional)
+            
