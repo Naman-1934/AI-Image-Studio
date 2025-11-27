@@ -1,4 +1,4 @@
-Prompt: a futuristic city at sunset, neon lights 
+Prompt: a futuristic city, neon lights 
 
 TimeStamp: November26, Wednesday, 4:21:14 PM
     elif style == "Photorealistic":
